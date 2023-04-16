@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qavi Super Mart.com</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        alert("Well Come To" + "\n" +  "Qavi Super Mart" + "\n" + "You Are on Shop Page");
+
+      
+    </script>
+
+</head>
+<body id="scro">
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> Qavi Super Mart</a>
+    
+    <!--move to up buttom-->
+<div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+
+    <nav class="navbar">
+        <a href="index.html"><b> home</b></a>
+        <a href="shop.html"><b>shop</b> </a>
+        <a href="about.html"><b>about</b> </a>
+        <a href="review.html"><b>review</b></a>
+        <a href="blog.html"><b>blog</b></a>
+        <a href="contact.html"><b>contact</b></a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="clothes/cl2.jpg" alt="">
+            <div class="content">
+                <h3>clothes</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">Rs 2,999.00</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="foods/fo2.jpg" alt="">
+            <div class="content">
+                <h3>lays</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">Rs 599.00</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="shoes/sh1.jpg" alt="">
+            <div class="content">
+                <h3>office shoes</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">RS 3,999.00</span>
+            </div>
+        </div>
+        <h3 class="total"> total : <span>Rs 7,597.00</span> </h3>
+        <a href="#" class="btn">checkout cart</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login form</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+</header>
+
+
+<!-- header section ends -->
+
+<div class="heading" id="home">
+    <h1>our shop</h1>
+    <p> <a href="index.html">home >></a> shop </p>
+</div>
+
+
+
+<section class="products" >
+
+    <h1 class="title"> new<span>clothes</span>  </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>pent coat</h3>
+                <div class="price">Rs 6999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pent Shirt</h3>
+                <div class="price">Rs 2999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pent Shirt</h3>
+                <div class="price">Rs 2999.00</div>
+                <div class="stars">
+                    <i onclick="start1()" class="fas fa-star"></i>
+                    <i onclick="start2()" class="fas fa-star"></i>
+                    <i onclick="start3()" class="fas fa-star"></i>
+                    <i onclick="start4()" class="fas fa-star"></i>
+                    <i onclick="start5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pent Shirt</h3>
+                <div class="price">Rs 2999.00</div>
+                <div class="stars">
+                    <i onclick="start1()" class="fas fa-star"></i>
+                    <i onclick="start2()" class="fas fa-star"></i>
+                    <i onclick="start3()" class="fas fa-star"></i>
+                    <i onclick="start4()" class="fas fa-star"></i>
+                    <i onclick="start5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="icons">
+                <a href="#"onclick="cart1()"  class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Kurta Pajama</h3>
+                <div class="price">Rs 3999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Kurta Pajama</h3>
+                <div class="price">Rs 3999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pent Shirt</h3>
+                <div class="price">Rs 4999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="clothes/cl8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pent Shirt</h3>
+                <div class="price">Rs 4999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="products">
+
+        <h1 class="title"> grocery <span>items</span>  </h1>
+        <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Tata Tea</h3>
+                <div class="price">Rs 599.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>lays</h3>
+                <div class="price">Rs 599.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Soup</h3>
+                <div class="price">Rs 599.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>macaroni</h3>
+                <div class="price">Rs 599.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Honey</h3>
+                <div class="price">Rs 499.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>magi</h3>
+                <div class="price">Rs 499.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>chocalate</h3>
+                <div class="price">Rs 499.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="foods/fo8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Ranch Oil</h3>
+                <div class="price">Rs 499.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+
+
+        <section class="products">
+
+            <h1 class="title"> shoes<span>and bags</span>  </h1>
+        
+            <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>office shoes</h3>
+                <div class="price">RS 3999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>sport shoes</h3>
+                <div class="price">RS 2999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>office shoes</h3>
+                <div class="price">RS 3999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>sport shoes</h3>
+                <div class="price">RS 2999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>hand bag small</h3>
+                <div class="price">RS 1999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>hand bag large</h3>
+                <div class="price">RS 2999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>hand bag large</h3>
+                <div class="price">RS 2999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" onclick="cart1()" class="fas fa-shopping-cart"></a>
+                <a href="#" onclick="fav()" class="fas fa-heart"></a>
+                <a href="#" onclick="eyeb()" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="shoes/sh8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>hand bag small</h3>
+                <div class="price">RS 1999.00</div>
+                <div class="stars">
+                    <i onclick="star1()" class="fas fa-star"></i>
+                    <i onclick="star2()" class="fas fa-star"></i>
+                    <i onclick="star3()" class="fas fa-star"></i>
+                    <i onclick="star4()" class="fas fa-star"></i>
+                    <i onclick="star5()" class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> privacy & policy </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            <a href="#"> <i class="fab fa-whatsapp"></i> whatsapp </a>
+        </div>
+
+    
+
+    </div>
+
+</section>
+
+<section class="credit">Created by: M Qavi Shaikh|&copy; copyright all rights reserved!</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom css file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

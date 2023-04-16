@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qavi Super Mart.com</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        alert("Well Come To" + "\n" +  "Qavi Super Mart" + "\n" + "You Are On Blog Page");
+    </script>
+
+</head>
+<body id="scro">
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> Qavi Super Mart </a>
+
+    <!--move to up buttom-->
+<div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+
+    <nav class="navbar">
+        <a href="index.html"><b>home</b></a>
+        <a href="shop.html"><b>shop</b></a>
+        <a href="about.html"><b>about</b></a>
+        <a href="review.html"><b>review</b></a>
+        <a href="blog.html"><b>blog</b></a>
+        <a href="contact.html"><b>contact</b></a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="clothes/cl2.jpg" alt="">
+            <div class="content">
+                <h3>clothes</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">Rs 2,999.00</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="foods/fo2.jpg" alt="">
+            <div class="content">
+                <h3>lays</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">Rs 599.00</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="shoes/sh1.jpg" alt="">
+            <div class="content">
+                <h3>office shoes</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">RS 3,999.00</span>
+            </div>
+        </div>
+        <h3 class="total"> total : <span>Rs 7,597.00</span> </h3>
+        <a href="#" class="btn">checkout cart</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login form</h3>
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="heading" id="home">
+    <h1>our blogs</h1>
+    <p> <a href="index.html">home >></a> blogs </p>
+</div>
+
+<section class="blogs">
+
+    <h1 class="title"> our <span>blogs</span>  </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/b1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st jan, 2022 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>pasta</h3>
+                <p>Pasta is a type of food typically made from an unleavened dough of wheat flour!</p>
+                <a onclick="rdm()" href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/b2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st feb, 2022 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>chicken karahi</h3>
+                <p>This chicken kadai recipe is delicious, spicy, and flavourful. Made with bone-in chicken!</p>
+                <a onclick="rdm()" href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/res3.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st march, 2022 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>vegetable pratha</h3>
+                <p>The vegetable pratha is a popular breakfast food for Pakistanis.!</p>
+                <a href="#" onclick="rdm()" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st aprail, 2021 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>fruit juice</h3>
+                <p>Fruits commonly cooked using these methods are pears, apples, peaches, nectarines, plums, and apricots!</p>
+                <a href="#" onclick="rdm()" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>milk shake</h3>
+                <p>A milkshake is a sweet beverage made by blending milk, ice cream, caramel sauce, chocolate syrup!</p>
+                <a href="#" onclick="rdm()" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/b3.jfif" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st june, 2021 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>fruit shake</h3>
+                <p>A smoothie is a beverage made by fruits in a blender. A smoothie commonly has a liquid base, such as fruit milk, yogurt, cheese.!</p>
+                <a onclick="rdm()" href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/blog-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st july, 2021 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>vegetable</h3>
+                <p>While some vegetables are best served raw, others taste better when they are roasted.!</p>
+                <a href="#" onclick="rdm()" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/blog-5.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st auguest, 2021 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>beef</h3>
+                <p>Beef is a good source of protein and other nutrients!</p>
+                <a href="#" onclick="rdm()" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img onclick="blo()" src="image/blog-6.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 21st sept, 2021 </a>
+                    <a onclick="ad()" href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Lentil</h3>
+                <p>Rich in B-complex vitamins, this yellow dal helps break down carbohydrates!</p>
+                <a href="#" onclick="rdm()" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> privacy & policy </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            <a href="#"> <i class="fab fa-whatsapp"></i> whatsapp </a>
+        </div>
+
+       
+
+    </div>
+
+</section>
+
+<section class="credit">Created by: M Qavi Shaikh|&copy; copyright all rights reserved!</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom css file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
